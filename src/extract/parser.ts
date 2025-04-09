@@ -43,7 +43,7 @@ export function parseFunctionCall(mapping: KeywordMapping, tokens: Token[]): Msg
     const stringArgs: string[] = [];
 
     // parse strings arguments
-    while (true) {
+    while (t) {
       if (t.kind !== TokenKind.String) {
         break;
       }
